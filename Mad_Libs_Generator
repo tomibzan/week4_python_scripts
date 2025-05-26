@@ -1,0 +1,38 @@
+story_template = """That day, the {noun1} lashed down {adverb1} from early morning. I couldn't even {verb1} the motivation to get out of my {noun2}, let alone get {adjective1} and head to work. So, I resigned myself to staying {noun3}. Then, {pronoun1} hit me: I had an {adjective2} appointment with my {noun4} to discuss plans to {verb2} our showroom. "Oh, crap," I thought. "I {adverb2} must {verb3} my boss and come up with a {adjective3} excuse."""
+
+
+print("Welcome to Mad Libs! Please provide the following words:")
+
+noun1 = input("Enter a noun: ")
+adverb1 = input("Enter an adverb: ")
+verb1 = input("Enter a verb: ")
+noun2 = input("Enter a noun: ")
+adjective1 = input("Enter an adjective: ")
+noun3 = input("Enter a noun: ")
+pronoun1 = input("Enter a type of pronoun: ")
+adjective2 = input("Enter an adjective: ")
+noun4 = input("Enter a noun: ")
+verb2 = input("Enter a verb: ")
+adverb2 = input("Enter an adverb: ")
+verb3 = input("Enter a verb: ")
+adjective3 = input("Enter an adjective: ")
+
+# fill in the story using the collected words
+completed_story = story_template.format(
+    noun1=noun1,
+    adverb1=adverb1,
+    verb1=verb1,
+    noun2=noun2,
+    adjective1=adjective1,
+    noun3=noun3,
+    pronoun1=pronoun1,
+    adjective2=adjective2, 
+    noun4=noun4,
+    verb2=verb2,
+    adverb2=adverb2,
+    verb3=verb3,
+    adjective3=adjective3
+)
+
+print("\n--- Your Mad Libs Story ---")
+print(completed_story)
